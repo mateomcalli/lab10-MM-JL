@@ -8,32 +8,15 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self):  # 3 assertions
-        try:
-            assert add(1, 1) == 2
-        except ValueError as e:
-            print("Error:", str(e))
-        try:
-            assert add(2, 3) == 5
-        except ValueError as e:
-            print("Error:", str(e))
-        try:
-            assert add(4, 4) == 8
-        except ValueError as e:
-            print("Error:", str(e))
+        self.assertEqual(add(5, 3), 8)
+        self.assertNotEqual(add(2, 3), 6)
+        self.assertEqual(add(2, 3), 5)
+
 
     def test_subtract(self):  # 3 assertions
-        try:
-            assert subtract(3, 1) == 2
-        except ValueError as e:
-            print("Error:", str(e))
-        try:
-            assert subtract(1, 1) == 0
-        except ValueError as e:
-            print("Error:", str(e))
-        try:
-            assert subtract(10, 2) == 8
-        except ValueError as e:
-            print("Error:", str(e))
+        self.assertEqual(subtract(3, 1), 2)
+        self.assertNotEqual(subtract(1, 1), 1)
+        self.assertEqual(subtract(5, 3), 2)
 
     # ##########################
 
@@ -55,18 +38,9 @@ class TestCalculator(unittest.TestCase):
             div(0, 5)
 
     def test_logarithm(self):  # 3 assertions
-        try:
-            assert logarithm(2, 8) == 3
-        except ValueError as e:
-            print("Error:", str(e))
-        try:
-            assert logarithm(3, 27) == 3
-        except ValueError as e:
-            print("Error:", str(e))
-        try:
-            assert logarithm(5, 625) == 4
-        except ValueError as e:
-            print("Error:", str(e))
+        self.assertEqual(logarithm(2, 8), 3)
+        self.assertNotEqual(logarithm(3, 27), 8)
+        self.assertEqual(logarithm(32, 2), 5)
 
     def test_log_invalid_base(self):  # 1 assertion
         with self.assertRaises(ValueError):
