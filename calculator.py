@@ -27,9 +27,6 @@ def add(a, b):
 def subtract(a,b):
     return a - b
 
-def multiply(a,b):
-    return a * b
-
 def logarithm(a,b):
     try:
         if a <= 0 or b <= 1:
@@ -37,15 +34,6 @@ def logarithm(a,b):
         else: return math.log(b,a)
     except ValueError as e:
         print(e)
-
-def exponent(a,b):
-    return a**b
-
-def add(a, b):
-    return a + b
-
-def sub(a,b):
-    return a - b
 
 def mul(a, b):
     return a * b
@@ -58,13 +46,6 @@ def div(a, b):
     except ValueError as e:
         print("Error:", str(e))
 
-def log(a, b):
-    try:
-        if b < 0 or a == 1 or a < 0:
-            raise ValueError("Invalid Value.")
-        return math.log(b, a)
-    except ValueError as e:
-        print("Error:", str(e))
 def exp(a, b):
     return a ** b
 
