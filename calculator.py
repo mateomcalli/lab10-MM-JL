@@ -19,14 +19,6 @@ def subtract(a,b):
 def multiply(a,b):
     return a * b
 
-def divide(a,b):
-    try:
-        if a != 0:
-            return b/a
-        else: raise ZeroDivisionError
-    except ZeroDivisionError as e:
-        print(e)
-
 def logarithm(a,b):
     try:
         if a <= 0 or b <= 1:
