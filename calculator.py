@@ -13,13 +13,13 @@ import math
 def add(a, b): 
     return a + b
 
-def sub(a,b):
+def subtract(a,b):
     return a - b
 
-def mul(a,b):
+def multiply(a,b):
     return a * b
 
-def div(a,b):
+def divide(a,b):
     try:
         if a != 0:
             return b/a
@@ -27,7 +27,7 @@ def div(a,b):
     except ZeroDivisionError as e:
         print(e)
 
-def log(a,b):
+def logarithm(a,b):
     try:
         if a <= 0 or b <= 1:
             raise ValueError
@@ -35,7 +35,7 @@ def log(a,b):
     except ValueError as e:
         print(e)
 
-def exp(a,b):
+def exponent(a,b):
     return a**b
 
 
