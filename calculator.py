@@ -1,10 +1,3 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
-
 # https://github.com/mateomcalli/lab10-MM-JL
 # Partner 1: Mateo McAllister | Partner 2: Jamie Laird
 
