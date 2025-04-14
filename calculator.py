@@ -25,6 +25,8 @@ def div(a,b):
     else: raise ZeroDivisionError
 
 def log(a,b):
+    if a <= 0 or b <= 1:
+        raise ValueError
     return math.log(b,a)
 
 def exp(a,b):
