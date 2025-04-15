@@ -32,13 +32,9 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    try:
         if a == 0:
             raise ZeroDivisionError
         return b / a
-    except ZeroDivisionError as e:
-        print("Error:", str(e))
 
 def exp(a, b):
     return a ** b
-
