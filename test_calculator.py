@@ -42,7 +42,7 @@ class TestCalculator(unittest.TestCase):
         self.assertNotEqual(logarithm(32, 2), 5)
 
     def test_log_invalid_base(self):  # 1 assertion
-        self.assertIs(logarithm(1, 100), None)
+        self.assertIs(logarithm(1, 1), None)
     # ##########################
 
     ######## Partner 1
