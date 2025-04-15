@@ -35,8 +35,7 @@ def div(a, b):
     try:
         if a == 0:
             raise ZeroDivisionError
-        else:
-            return b / a
+        return b / a
     except ZeroDivisionError as e:
         print("Error:", str(e))
 
