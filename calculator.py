@@ -37,7 +37,7 @@ def div(a, b):
             raise ZeroDivisionError
         return b / a
     except ZeroDivisionError as e:
-        print("Error:", str(e))
+        print(str(e))
 
 def exp(a, b):
     return a ** b
