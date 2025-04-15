@@ -21,12 +21,13 @@ def subtract(a,b):
     return a - b
 
 def logarithm(a,b):
-    try:
-        if a <= 0 or b <= 1:
-            raise ValueError
-        else: return math.log(b,a)
-    except ValueError as e:
-        print(e)
+    if a <= 0:
+        raise ValueError
+    if a == 1:
+        raise ValueError
+    if b <= 0:
+        raise ValueError
+    return math.log(b,a)
 
 def mul(a, b):
     return a * b
