@@ -34,9 +34,9 @@ def mul(a, b):
 def div(a, b):
     try:
         if a == 0:
-            raise ZeroDivisonError("Dividing by 0")
+            raise ZeroDivisionError("Dividing by 0")
         return b / a
-    except ZeroDivisonError as e:
+    except ZeroDivisionError as e:
         print("Error:", str(e))
 
 def exp(a, b):
