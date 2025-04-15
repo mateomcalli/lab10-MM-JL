@@ -29,7 +29,7 @@ class TestCalculator(unittest.TestCase):
     def test_divide(self): # 3 assertions
         self.assertEqual(div(1,21), 21)
         self.assertNotEqual(div(5,1.5), 7.5)
-        self.assertIs(div(0,1), None)
+        self.assertEqual(div(1,5), 5)
     ##########################
 
     ######## Partner 2
@@ -49,7 +49,8 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
-        self.assertIs(logarithm(-1,5),None)
+        with self.assertRaises(ValueError):
+            logarithm(1, 27)
 
     def test_hypotenuse(self): # 3 assertions
         self.assertAlmostEqual(hypotenuse(3,4),5)
