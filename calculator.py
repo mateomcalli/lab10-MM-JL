@@ -23,9 +23,9 @@ def subtract(a,b):
 def logarithm(a,b):
     try:
         if a <= 0 or b <= 1:
-            raise ValueError
+            raise ZeroDivisionError
         else: return math.log(b,a)
-    except ValueError as e:
+    except ZeroDivisionError as e:
         print(e)
 
 def mul(a, b):
@@ -41,4 +41,3 @@ def div(a, b):
 
 def exp(a, b):
     return a ** b
-
