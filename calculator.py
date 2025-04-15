@@ -36,7 +36,7 @@ def div(a, b):
         if a == 0:
             raise ZeroDivisonError("Dividing by 0")
         return b / a
-    except ValueError as e:
+    except ZeroDivisonError as e:
         print("Error:", str(e))
 
 def exp(a, b):
