@@ -44,7 +44,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self):  # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            log(0, 10)
+            logrithm(0, 10)
     # ##########################
 
     ######## Partner 1
