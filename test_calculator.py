@@ -29,12 +29,12 @@ class TestCalculator(unittest.TestCase):
     def test_divide(self): # 3 assertions
         self.assertEqual(div(1,21), 21)
         self.assertNotEqual(div(5,1.5), 7.5)
-        self.assertIs(div(0,1), None)
+        self.assertRaises(ZeroDivisionError, div, 0,1)
     ##########################
 
     ######## Partner 2
     def test_divide_by_zero(self):  # 1 assertion
-        self.assertIs(div(0,1), None)
+        self.assertRaises(ZeroDivisionError, div, 0, 1)
 
     def test_logarithm(self):  # 3 assertions
         self.assertEqual(logarithm(2, 8), 3)
